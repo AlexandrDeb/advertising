@@ -1,0 +1,28 @@
+@mixin button-style{
+  border-radius: 0;
+  padding: 10px 12px;
+  font-size: 26px;
+}
+#pagination_wrapper{
+  text-align: center;
+}
+.bodyTitle{
+  text-align: center;
+}
+
+.buttons-row {
+  padding: 0 !important;
+  margin-bottom: 20px !important;
+  .delete-btn-wrapper {
+    padding: 0 !important;
+    .btn-delete {
+      @include button-style;
+    }
+  }
+  .update-btn-wrapper {
+    padding: 0 !important;
+    .btn-update {
+      @include button-style;
+    }
+  }
+}
